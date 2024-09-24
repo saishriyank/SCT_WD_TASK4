@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  height:100vh;
+  background-size:cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-right:10px;
+  border-radius: 4px;
+  background-color: #222;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.datetime-container {
+  position: relative;
+  width: 30%;
+}
+
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  margin-right:10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #222;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+label {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+input[type="datetime-local"]:focus + label,
+input[type="datetime-local"]:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 12px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #444;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.done-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.done-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
